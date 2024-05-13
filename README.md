@@ -1,1 +1,1 @@
-# nginx-cfg
+Empty yet.
