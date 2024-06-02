@@ -40,6 +40,11 @@ location ^~ /subdir1 {
 
 Обработка ошибки 404, если файл `404.html` в корне домена `/home/user/htdocs/domain.org`:
 
+```
+- domain.org
+  - 404.html
+```
+
 ```nginx
 error_page 404 /404.html;
 ```
