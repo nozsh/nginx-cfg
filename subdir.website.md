@@ -57,7 +57,7 @@ error_page 404 /subdir/404.html;
 
 ```
 - domain.org
-  - subdir1
+  - subdir
     - public
       - 404.html
 ```
