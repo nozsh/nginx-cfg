@@ -40,19 +40,26 @@ location ^~ /subdir1 {
 
 Обработка ошибки 404, если файл `404.html` в корне домена `/home/user/htdocs/domain.org`:
 
+```nginx
+error_page 404 /404.html;
+```
+
 ```
 - domain.org
   - 404.html
-```
-
-```nginx
-error_page 404 /404.html;
 ```
 
 Если файл `404.html` в поддиректории домена:
 
 ```nginx
 error_page 404 /subdir/404.html;
+```
+
+```
+- domain.org
+  - subdir1
+    - public
+      - 404.html
 ```
 
 Это не переадресация. Файл откроется там, где ошибка, без `.html` в конце.
